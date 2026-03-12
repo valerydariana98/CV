@@ -1,0 +1,250 @@
+/* RESET SIMPLE */
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+}
+
+:root{
+  --purple: #f3f0ff;          
+  --dark-purple: #7c3aed;     
+
+  --pink: #fdf2f8;           
+  --dark-pink: #ec4899;       
+
+  --green: #ecfdf5;         
+  --dark-green: #10b981;   
+
+  --blue: #eff6ff;         
+  --dark-blue: #3b82f6;      
+
+  --light-gray: #f8fafc;      
+  --gray: #6b7280;            
+  --dark-gray: #1f2937;      
+  
+  --white: #ffffff;  
+}
+
+html{
+  scroll-behavior:smooth;
+}
+
+body{
+  font-family: 'Inter', system-ui, sans-serif;
+  background: var(--light-gray);
+  color: var(--dark-gray);
+  line-height: 1.6;
+  
+}
+
+h1{
+  font-size:2rem;
+  font-weight:700;
+  color: var(--dark-gray);
+}
+
+h2{
+  font-size:1.4rem;
+  font-weight:600;
+  color: var(--dark-gray);
+}
+
+h3{
+  font-size:1.1rem;
+  font-weight:600;
+  color: var(--dark-gray);
+}
+
+p{
+  color:var(--gray);
+  line-height:1.6;
+}
+
+section{
+  margin: 2rem 1rem;
+}
+
+.section-title {
+  max-width: 1000px; /* Misma medida que la card */
+  margin: 0 auto 1rem auto;
+  padding-left: 0.5rem; /* Un poco de aire a la izquierda para alinear con el texto */
+  border-left: 4px solid var(--purple); /* Un detalle visual profesional */
+}
+
+.section-card {
+  background: white;
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+  max-width: 1000px; 
+  margin: 0 auto; /* Centra la caja horizontalmente */
+  
+  /* Nota: align-items solo funciona si tienes display: flex */
+}
+
+/* NAVBAR */
+
+.navbar {
+  position: sticky;
+  top: 0;
+  background: white; 
+  border-bottom: 2px solid #e2e8f0; 
+  z-index: 1000;
+}
+
+.nav-container{
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  padding:1rem;
+}
+
+.nav-name{
+  font-size:1rem;
+}
+
+.nav-download, .nav-toggle {
+  background: var(--purple);     
+  border: 1.5px solid var(--dark-purple); 
+  color: var(--dark-purple);     
+  border-radius: 10px;         
+  padding: 8px 12px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s ease;
+}
+
+/* MENU */
+
+.nav-menu{
+  list-style:none;
+  display:none;
+  flex-direction:column;
+  gap:0.5rem;
+  margin: 0 1rem 1rem 1rem;
+  padding:1rem;
+  border-radius: 1px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+}
+
+.nav-menu a{
+  text-decoration:none;
+  color:#333;
+  font-weight:500;
+  display: block;
+  padding: 0.6rem 1rem;
+  border-bottom: 1px solid #e2e8f0;
+}
+
+.nav-menu.active{
+  display:flex;
+}
+
+/*HEADER / PROFILE*/
+.header-container{
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  text-align:center;
+  padding:2rem 1rem;
+  gap:1rem;
+}
+
+.header-photo img {
+  width: 12rem; /* Aumentado como pediste */
+  height: 12rem;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 6px solid var(--white); /* Borde blanco grueso */
+  box-shadow: 0 10px 25px var(--purple); 
+}
+
+.location svg{
+  width:1rem;
+  height:1rem;
+}
+
+.location{
+  color:var(--dark-green);
+  font-size:0.9rem;
+  margin-top: 0.8rem;
+}
+
+.profile-summary {
+  max-width: 1000px; /* Para que en Web no se estire demasiado */
+  margin: 1rem auto 0 auto;
+  text-align: justify;
+}
+
+/* CONTACT */
+.contact-list {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.contact-row {
+  display: flex;
+  align-items: center;
+  gap: 1.2rem;
+  text-decoration: none;
+}
+
+/* Reutilizamos exactamente tu estilo de icon-circle */
+.icon-circle {
+  width: 48px;
+  height: 48px;
+  border-radius: 14px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.icon-circle svg {
+  width: 22px;
+  height: 22px;
+  stroke: currentColor;
+}
+
+.contact-text {
+  display: flex;
+  flex-direction: column;
+}
+
+/* El número y mail en NEGRO/GRIS OSCURO */
+.contact-text span {
+  font-size: 1rem;
+  color: var(--dark-gray); 
+  font-weight: 600;
+  word-break: break-all;
+}
+
+/* El label (WhatsApp, Email) en GRIS CLARO */
+.contact-text label {
+  font-size: 0.75rem;
+  font-weight: 500;
+  color: var(--gray); /* Gray para el label */
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  margin-bottom: 2px;
+}
+
+/* Mantenemos tus colores del :root */
+.green-box { background: var(--green); color: var(--dark-green); }
+.pink-box { background: var(--pink); color: var(--dark-pink); }
+.blue-box { background: var(--blue); color: var(--dark-blue); }
+.purple-box { background: var(--purple); color: var(--dark-purple); }
+
+
+
+
+
+
+
+
+
+
+
