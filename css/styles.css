@@ -1,113 +1,171 @@
 /* RESET SIMPLE */
-*{
-  margin:0;
-  padding:0;
-  box-sizing:border-box;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-:root{
-  --purple: #f3f0ff;          
-  --dark-purple: #7c3aed;     
+:root {
+  --purple: #f3f0ff;
+  --dark-purple: #7c3aed;
 
-  --pink: #fdf2f8;           
-  --dark-pink: #ec4899;       
+  --pink: #fceff5;
+  --dark-pink: #ec4899;
 
-  --green: #ecfdf5;         
-  --dark-green: #10b981;   
+  --green: #ecfdf5;
+  --dark-green: #10b981;
 
-  --blue: #eff6ff;         
-  --dark-blue: #3b82f6;      
+  --blue: #eff6ff;
+  --dark-blue: #3b82f6;
 
-  --light-gray: #f8fafc;      
-  --gray: #6b7280;            
-  --dark-gray: #1f2937;      
-  
-  --white: #ffffff;  
+  --light-gray: #f8fafc;
+  --gray: #6b7280;
+  --dark-gray: #1f2937;
+
+  --white: #ffffff;
+  --max-width: 62.5rem;
 }
 
-html{
-  scroll-behavior:smooth;
+html {
+  scroll-behavior: smooth;
 }
 
-body{
+body {
   font-family: 'Inter', system-ui, sans-serif;
-  background: var(--light-gray);
+  background: var(--light-pink);
   color: var(--dark-gray);
+}
+
+h1 {
+  font-size: 2rem;
+  font-weight: 700;
+  color: var(--dark-gray);
+}
+
+h2 {
+  font-size: 1.4rem;
+  font-weight: 600;
+  color: var(--dark-gray);
+}
+
+h3 {
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: var(--dark-gray);
+}
+
+p {
+  color: var(--gray);
   line-height: 1.6;
-  
 }
 
-h1{
-  font-size:2rem;
-  font-weight:700;
-  color: var(--dark-gray);
+ul {
+  color: var(--gray);
+  text-align: justify;
+  margin-left: 1rem;
+  margin-bottom: 0.5rem;
 }
 
-h2{
-  font-size:1.4rem;
-  font-weight:600;
-  color: var(--dark-gray);
-}
-
-h3{
-  font-size:1.1rem;
-  font-weight:600;
-  color: var(--dark-gray);
-}
-
-p{
-  color:var(--gray);
-  line-height:1.6;
-}
-
-section{
-  margin: 2rem 1rem;
+section {
+  margin: 2rem 0;
 }
 
 .section-title {
-  max-width: 1000px; /* Misma medida que la card */
+  max-width: var(--max-width);
   margin: 0 auto 1rem auto;
-  padding-left: 0.5rem; /* Un poco de aire a la izquierda para alinear con el texto */
-  border-left: 4px solid var(--purple); /* Un detalle visual profesional */
+  padding-left: 0.5rem;
+  display: flex;
+  align-items: center;
+  gap: 0.7rem;
 }
 
+.section-title svg {
+  width: 1.5rem;
+  height: 1.5rem;
+  stroke: var(--dark-purple); 
+  fill: var(--dark-purple);
+}
+
+
 .section-card {
-  background: white;
-  padding: 2rem;
+  background: var(--white);
   border-radius: 12px;
   box-shadow: 0 2px 10px rgba(0,0,0,0.05);
-  max-width: 1000px; 
-  margin: 0 auto; /* Centra la caja horizontalmente */
-  
-  /* Nota: align-items solo funciona si tienes display: flex */
+  padding: 1.5rem;      
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+
+.grid-one-column,
+.grid-two-columns {
+  display: grid;
+  gap: 1.5rem;      
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding: 0 0.5rem;
+  position: relative;
+}
+
+
+.green-box {
+  background: var(--green);
+  color: var(--dark-green);
+}
+
+.pink-box {
+  background: var(--pink);
+  color: var(--dark-pink);
+}
+
+.blue-box {
+  background: var(--blue);
+  color: var(--dark-blue);
+}
+
+.purple-box {
+  background: var(--purple);
+  color: var(--dark-purple);
+}
+
+.gray-box {
+  background: var(--light-gray);
+  color: var(--dark-gray);
+}
+
+@media (min-width: 800px) {
+  .grid-two-columns {
+    grid-template-columns: repeat(2, 1fr);
+  }
 }
 
 /* NAVBAR */
-
 .navbar {
   position: sticky;
   top: 0;
-  background: white; 
-  border-bottom: 2px solid #e2e8f0; 
+  background: white;
+  border-bottom: 2px solid #e2e8f0;
   z-index: 1000;
 }
 
-.nav-container{
-  display:flex;
-  justify-content:space-between;
-  align-items:center;
-  padding:1rem;
+.nav-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
 }
 
-.nav-name{
-  font-size:1rem;
+.nav-name {
+  font-size: 1rem;
 }
 
-.nav-download, .nav-toggle {
-  background: var(--purple);     
-  border: 1.5px solid var(--dark-purple); 
-  color: var(--dark-purple);     
-  border-radius: 10px;         
+.nav-download,
+.nav-toggle {
+  background: var(--purple);
+  border: 1.5px solid var(--dark-purple);
+  color: var(--dark-purple);
+  border-radius: 10px;
   padding: 8px 12px;
   cursor: pointer;
   display: flex;
@@ -117,63 +175,62 @@ section{
 }
 
 /* MENU */
-
-.nav-menu{
-  list-style:none;
-  display:none;
-  flex-direction:column;
-  gap:0.5rem;
+.nav-menu {
+  list-style: none;
+  display: none;
+  flex-direction: column;
+  gap: 0.5rem;
   margin: 0 1rem 1rem 1rem;
-  padding:1rem;
+  padding: 1rem;
   border-radius: 1px;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
 }
 
-.nav-menu a{
-  text-decoration:none;
-  color:#333;
-  font-weight:500;
+.nav-menu a {
+  text-decoration: none;
+  color: #333;
+  font-weight: 500;
   display: block;
   padding: 0.6rem 1rem;
   border-bottom: 1px solid #e2e8f0;
 }
 
-.nav-menu.active{
-  display:flex;
+.nav-menu.active {
+  display: flex;
 }
 
 /*HEADER / PROFILE*/
-.header-container{
-  display:flex;
-  flex-direction:column;
-  align-items:center;
-  text-align:center;
-  padding:2rem 1rem;
-  gap:1rem;
+.header-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 2rem 1rem;
+  gap: 1rem;
 }
 
 .header-photo img {
-  width: 12rem; /* Aumentado como pediste */
+  width: 12rem;
   height: 12rem;
   object-fit: cover;
   border-radius: 50%;
-  border: 6px solid var(--white); /* Borde blanco grueso */
-  box-shadow: 0 10px 25px var(--purple); 
+  border: 6px solid var(--white);
+  box-shadow: 0 10px 25px var(--pink);
 }
 
-.location svg{
-  width:1rem;
-  height:1rem;
+.location svg {
+  width: 1rem;
+  height: 1rem;
 }
 
-.location{
-  color:var(--dark-green);
-  font-size:0.9rem;
+.location {
+  color: var(--dark-green);
+  font-size: 0.9rem;
   margin-top: 0.8rem;
 }
 
 .profile-summary {
-  max-width: 1000px; /* Para que en Web no se estire demasiado */
+  max-width: var(--max-width);
   margin: 1rem auto 0 auto;
   text-align: justify;
 }
@@ -192,7 +249,6 @@ section{
   text-decoration: none;
 }
 
-/* Reutilizamos exactamente tu estilo de icon-circle */
 .icon-circle {
   width: 48px;
   height: 48px;
@@ -214,37 +270,212 @@ section{
   flex-direction: column;
 }
 
-/* El número y mail en NEGRO/GRIS OSCURO */
 .contact-text span {
   font-size: 1rem;
-  color: var(--dark-gray); 
+  color: var(--dark-gray);
   font-weight: 600;
   word-break: break-all;
 }
 
-/* El label (WhatsApp, Email) en GRIS CLARO */
 .contact-text label {
   font-size: 0.75rem;
   font-weight: 500;
-  color: var(--gray); /* Gray para el label */
+  color: var(--gray);
   text-transform: uppercase;
   letter-spacing: 0.5px;
   margin-bottom: 2px;
 }
 
-/* Mantenemos tus colores del :root */
-.green-box { background: var(--green); color: var(--dark-green); }
-.pink-box { background: var(--pink); color: var(--dark-pink); }
-.blue-box { background: var(--blue); color: var(--dark-blue); }
-.purple-box { background: var(--purple); color: var(--dark-purple); }
+/* SKILLS */
+.tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem; /* más espacio entre cajitas */
+}
+
+.tags span {
+  padding: 0.6rem 1.2rem; /* más grandes */
+  border-radius: 12px;    /* esquinas más redondeadas */
+  font-size: 1rem;        /* texto un poco más grande */
+  font-weight: 500;
+  white-space: nowrap;
+}
+
+/* PROJECTS */
+.project-card {
+  background: white;
+  border-radius: 16px;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+  padding: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.project-header {
+  border-radius: 12px;
+  padding: 2.5rem; /* más alto */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 1rem;
+}
+
+.project-icon svg {
+  width: 48px;
+  height: 48px;
+}
+
+/* Fondos degradados en el header */
+.cv .project-header {
+  background: linear-gradient(135deg, var(--purple), var(--pink));
+}
+.snapfilm .project-header {
+  background: linear-gradient(135deg, var(--pink), var(--blue));
+}
+.oficios .project-header {
+  background: linear-gradient(135deg, var(--blue), var(--green));
+}
+
+/* Colores de iconos distintos */
+.cv .project-icon svg {
+  color: var(--dark-purple);
+}
+.snapfilm .project-icon svg {
+  color: var(--dark-pink);
+}
+.oficios .project-icon svg {
+  color: var(--dark-blue);
+}
+
+/* Tags grises pequeñas */
+.project-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem;
+  margin-top: 1rem;
+}
+
+.project-tags span {
+  background: var(--light-gray);
+  color: var(--dark-gray);
+  padding: 0.3rem 0.7rem;
+  border-radius: 12px;
+  font-size: 0.8rem;
+  font-weight: 500;
+}
 
 
+/* WORK EXPERIENCE */
 
+.timeline-item {
+  position: relative;
+  padding-left: 2rem; 
+}
 
+/* Linea */
+.timeline-item::after {
+  content: "";
+  position: absolute;
+  left: 9px;
+  top: 3rem;  
+  bottom: 1rem;  
+  width: 2px;
+  background: #e5e7eb;
+}
 
+/* Punto  */
+.timeline-item::before {
+  content: "";
+  position: absolute;
+  left: 6px; 
+  top: 1.8rem; 
+  width: 10px;
+  height: 10px;
+  background: var(--dark-pink); 
+  border-radius: 50%;
+  z-index: 1; 
+}
 
+.timeline-item h3 {
+  display: flex;
+  justify-content: space-between; 
+  align-items: center;
+  margin-bottom: 0.3rem;
+  color: var(--dark-pink); 
+}
 
+/* Fecha */
+.timeline-item .date {
+  font-size: 1rem;
+  color: var(--gray); 
+  font-weight: 500;
+}
 
+/* Languages */
+#languages .section-title svg {
+  stroke: var(--white);
+}
 
+/* References */
+#references .section-title svg {
+  stroke: var(--white);
+}
 
+/* FOOTER */
+.footer {
+  margin-top: 2rem;
+  padding: 2rem 1rem;
+}
 
+/* CONTENEDOR CENTRAL */
+.footer-container {
+  max-width: var(--max-width);
+  margin: 0 auto;
+
+  display: flex;
+  justify-content: center; /* 👈 centra todo */
+  align-items: center;
+  gap: 1.5rem; /* 👈 espacio entre items */
+  flex-wrap: wrap; /* 👈 responsive */
+}
+
+/* ITEM */
+.footer-item {
+  display: flex;
+  flex-direction: column; 
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+
+  padding: 1rem;
+  border-radius: 16px;
+
+  width: 90px; 
+  height: 90px;
+  transition: all 0.3s ease;
+}
+
+/* TEXTO */
+.footer-item span {
+  margin-top: 0.5rem;
+  font-size: 0.85rem;
+  font-weight: 500;
+}
+
+/* ICONO */
+.footer-item .icon-circle {
+  width: 48px;
+  height: 48px;
+  border-radius: 14px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* HOVER */
+.footer-item:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 6px 15px rgba(0,0,0,0.08);
+}
