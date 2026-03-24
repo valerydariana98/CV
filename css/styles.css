@@ -100,6 +100,7 @@ section {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  height: 100%;
 }
 
 .grid-one-column,
@@ -294,24 +295,30 @@ section {
 
 /* Fondos degradados */
 .cv .project-header {
-  background: linear-gradient(135deg, var(--purple), var(--pink));
+  background: linear-gradient(135deg, var(--blue), var(--green));
 }
 .snapfilm .project-header {
-  background: linear-gradient(135deg, var(--pink), var(--blue));
+  background: linear-gradient(135deg, var(--pink), var(--purple));
 }
 .oficios .project-header {
-  background: linear-gradient(135deg, var(--blue), var(--green));
+  background: linear-gradient(135deg, var(--green), var(--blue));
+}
+.mafia .project-header {
+  background: linear-gradient(135deg, var(--purple), var(--pink));
 }
 
 /* Colores de iconos */
 .cv .project-icon  {
-  color: var(--dark-purple);
+  color: var(--dark-blue);
 }
 .snapfilm .project-icon {
   color: var(--dark-pink);
 }
 .oficios .project-icon {
-  color: var(--dark-blue);
+  color: var(--dark-green);
+}
+.mafia .project-icon {
+  color: var(--dark-purple);
 }
 
 .project-tags {
