@@ -57,6 +57,7 @@ h3 {
 p {
   color: var(--gray);
   line-height: 1.6;
+  text-align: justify;
 }
 
 ul {
@@ -66,8 +67,13 @@ ul {
   margin-bottom: 0.5rem;
 }
 
+#header {
+  scroll-margin-top: 90px; 
+}
+
 section {
   margin: 2rem 0;
+  scroll-margin-top: 90px;
 }
 
 .section-title {
@@ -86,7 +92,6 @@ section {
   fill: var(--dark-purple);
 }
 
-
 .section-card {
   background: var(--white);
   border-radius: 12px;
@@ -97,7 +102,6 @@ section {
   justify-content: space-between;
 }
 
-
 .grid-one-column,
 .grid-two-columns {
   display: grid;
@@ -107,7 +111,6 @@ section {
   padding: 0 0.5rem;
   position: relative;
 }
-
 
 .green-box {
   background: var(--green);
@@ -127,17 +130,6 @@ section {
 .purple-box {
   background: var(--purple);
   color: var(--dark-purple);
-}
-
-.gray-box {
-  background: var(--light-gray);
-  color: var(--dark-gray);
-}
-
-@media (min-width: 800px) {
-  .grid-two-columns {
-    grid-template-columns: repeat(2, 1fr);
-  }
 }
 
 /* NAVBAR */
@@ -174,7 +166,6 @@ section {
   transition: all 0.3s ease;
 }
 
-/* MENU */
 .nav-menu {
   list-style: none;
   display: none;
@@ -199,7 +190,7 @@ section {
   display: flex;
 }
 
-/*HEADER / PROFILE*/
+/* HEADER */
 .header-container {
   display: flex;
   flex-direction: column;
@@ -227,12 +218,12 @@ section {
   color: var(--dark-green);
   font-size: 0.9rem;
   margin-top: 0.8rem;
+  text-align: center;
 }
 
 .profile-summary {
   max-width: var(--max-width);
   margin: 1rem auto 0 auto;
-  text-align: justify;
 }
 
 /* CONTACT */
@@ -265,56 +256,25 @@ section {
   stroke: currentColor;
 }
 
-.contact-text {
-  display: flex;
-  flex-direction: column;
-}
-
-.contact-text span {
-  font-size: 1rem;
-  color: var(--dark-gray);
-  font-weight: 600;
-  word-break: break-all;
-}
-
-.contact-text label {
-  font-size: 0.75rem;
-  font-weight: 500;
-  color: var(--gray);
-  text-transform: uppercase;
-  letter-spacing: 0.5px;
-  margin-bottom: 2px;
-}
-
 /* SKILLS */
 .tags {
   display: flex;
   flex-wrap: wrap;
-  gap: 0.75rem; /* más espacio entre cajitas */
+  gap: 0.75rem; 
 }
 
 .tags span {
-  padding: 0.6rem 1.2rem; /* más grandes */
-  border-radius: 12px;    /* esquinas más redondeadas */
-  font-size: 1rem;        /* texto un poco más grande */
+  padding: 0.6rem 1.2rem; 
+  border-radius: 12px;   
+  font-size: 1rem;      
   font-weight: 500;
   white-space: nowrap;
 }
 
 /* PROJECTS */
-.project-card {
-  background: white;
-  border-radius: 16px;
-  box-shadow: 0 2px 10px rgba(0,0,0,0.05);
-  padding: 1.5rem;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-}
-
 .project-header {
   border-radius: 12px;
-  padding: 2.5rem; /* más alto */
+  padding: 2.5rem;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -326,7 +286,13 @@ section {
   height: 48px;
 }
 
-/* Fondos degradados en el header */
+.project-link {
+  text-decoration: none;
+  color: inherit;
+  display: block;
+}
+
+/* Fondos degradados */
 .cv .project-header {
   background: linear-gradient(135deg, var(--purple), var(--pink));
 }
@@ -337,18 +303,17 @@ section {
   background: linear-gradient(135deg, var(--blue), var(--green));
 }
 
-/* Colores de iconos distintos */
-.cv .project-icon svg {
+/* Colores de iconos */
+.cv .project-icon  {
   color: var(--dark-purple);
 }
-.snapfilm .project-icon svg {
+.snapfilm .project-icon {
   color: var(--dark-pink);
 }
-.oficios .project-icon svg {
+.oficios .project-icon {
   color: var(--dark-blue);
 }
 
-/* Tags grises pequeñas */
 .project-tags {
   display: flex;
   flex-wrap: wrap;
@@ -360,14 +325,12 @@ section {
   background: var(--light-gray);
   color: var(--dark-gray);
   padding: 0.3rem 0.7rem;
-  border-radius: 12px;
+  border-radius: 6px;
   font-size: 0.8rem;
   font-weight: 500;
 }
 
-
 /* WORK EXPERIENCE */
-
 .timeline-item {
   position: relative;
   padding-left: 2rem; 
@@ -405,21 +368,29 @@ section {
   color: var(--dark-pink); 
 }
 
-/* Fecha */
-.timeline-item .date {
+.date {
   font-size: 1rem;
   color: var(--gray); 
   font-weight: 500;
 }
 
-/* Languages */
-#languages .section-title svg {
-  stroke: var(--white);
+/* REFERENCES */
+.reference-actions {
+  display: grid;
+  grid-template-columns: 1fr; 
+  gap: 0.6rem;
+  margin-top: 1rem;
 }
 
-/* References */
-#references .section-title svg {
-  stroke: var(--white);
+.contact-pill {
+  display: block;
+  text-align: center;
+  padding: 0.6rem 0.8rem;
+  border-radius: 12px;
+  font-size: 0.85rem;
+  font-weight: 500;
+  text-decoration: none;
+  transition: all 0.2s ease;
 }
 
 /* FOOTER */
@@ -428,19 +399,17 @@ section {
   padding: 2rem 1rem;
 }
 
-/* CONTENEDOR CENTRAL */
 .footer-container {
   max-width: var(--max-width);
   margin: 0 auto;
 
   display: flex;
-  justify-content: center; /* 👈 centra todo */
+  justify-content: center; 
   align-items: center;
-  gap: 1.5rem; /* 👈 espacio entre items */
-  flex-wrap: wrap; /* 👈 responsive */
+  gap: 0.8rem; 
+  flex-wrap: wrap; 
 }
 
-/* ITEM */
 .footer-item {
   display: flex;
   flex-direction: column; 
@@ -451,19 +420,16 @@ section {
   padding: 1rem;
   border-radius: 16px;
 
-  width: 90px; 
-  height: 90px;
+  width: 75px; 
+  height: 75px;
   transition: all 0.3s ease;
 }
 
-/* TEXTO */
 .footer-item span {
-  margin-top: 0.5rem;
-  font-size: 0.85rem;
+  font-size: 0.7rem;
   font-weight: 500;
 }
 
-/* ICONO */
 .footer-item .icon-circle {
   width: 48px;
   height: 48px;
@@ -474,8 +440,46 @@ section {
   justify-content: center;
 }
 
-/* HOVER */
-.footer-item:hover {
-  transform: translateY(-3px);
-  box-shadow: 0 6px 15px rgba(0,0,0,0.08);
+/* GENERAL */
+@media (min-width: 800px) {
+  .grid-two-columns {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media print {
+  .navbar {
+    display: none;
+  }
+
+  body {
+    margin: 0;
+    padding: 0;
+    background: white;
+  }
+
+  main {
+    margin: 0;
+    padding: 0;
+  }
+
+  .section-card {
+    break-inside: avoid;
+    page-break-inside: avoid;
+  }
+
+  .section-title {
+    break-after: avoid;
+    page-break-after: avoid;
+  }
+
+  ul {
+    break-inside: avoid;
+  }
+
+  a {
+    color: black;
+    text-decoration: none;
+  }
+
 }
