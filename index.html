@@ -8,12 +8,15 @@
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+
   <link rel="stylesheet" href="css/styles.css">
 </head>
 
 <body>
-  <nav class="navbar">
-    <div class="nav-container">
+  <nav class="navbar w3-white w3-card">
+    <div class="nav-container w3-bar">
       <button class="nav-download" aria-label="Print CV">
         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
           viewBox="0 0 24 24" fill="none" stroke="currentColor"
@@ -24,7 +27,7 @@
         </svg>
       </button>
 
-      <h2 class="nav-name">Valery Dariana Ortuño Panozo</h2>
+      <h2 class="nav-name w3-bar-item">Valery Dariana Ortuño Panozo</h2>
 
       <button class="nav-toggle" aria-label="Open navigation">
         <svg xmlns="http://www.w3.org/2000/svg" 
@@ -36,7 +39,6 @@
             stroke-width="2" 
             stroke-linecap="round" 
             stroke-linejoin="round">
-
           <line x1="3" y1="12" x2="21" y2="12"></line>
           <line x1="3" y1="6" x2="21" y2="6"></line>
           <line x1="3" y1="18" x2="21" y2="18"></line>
@@ -53,24 +55,20 @@
       <li><a href="#experience">Experience</a></li>
       <li><a href="#languages">Languages</a></li>
     </ul>
-
   </nav>
 
-  <header id="header">
-    <div class="header-container">
+  <header id="header" class="w3-center">
+    <div class="header-container w3-padding-large">
       <div class="header-photo">
-        <img src="images/profile.jpg" alt="Valery Ortuño">
+        <img src="images/profile.jpg" alt="Valery Ortuño" class="w3-circle">
       </div>
 
       <div class="header-info">
         <h1>Valery Ortuño</h1>
-        <h2>
-          Industrial Engineer / Computer Science Student
-        </h2>
+        <h2>Industrial Engineer / Computer Science Student</h2>
         <p class="location">
           <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
             stroke-linecap="round" stroke-linejoin="round">
-
             <path d="M21 10c0 7-9 13-9 13S3 17 3 10a9 9 0 1118 0z"></path>
             <circle cx="12" cy="10" r="3"></circle>
           </svg>
@@ -90,12 +88,13 @@
   </header>
 
   <main>
+
     <!-- CONTACT -->
     <section id="contact">
       <h2 class="section-title">
         <svg xmlns="http://www.w3.org/2000/svg" 
             viewBox="0 0 24 24" 
-            width="24" height="24" >
+            width="24" height="24">
           <circle cx="12" cy="8" r="4"></circle>
           <path d="M4 20c0-4 4-6 8-6s8 2 8 6v2H4v-2z"></path>
         </svg>
@@ -103,7 +102,7 @@
       </h2>
 
       <div class="grid-two-columns">
-        <div class="section-card">
+        <div class="section-card w3-card-4 w3-round-large w3-white">
           <a href="https://wa.me/59160781562" target="_blank" rel="noopener noreferrer" class="contact-row">
             <div class="icon-circle green-box">
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
@@ -115,8 +114,8 @@
           </a>
         </div>
 
-        <div class="section-card">
-          <a href="mailto:valerydariana98@gmail.com" class="contact-row">
+        <div class="section-card w3-card-4 w3-round-large w3-white">
+          <a href="/cdn-cgi/l/email-protection#186e79747d6a617c796a717976792120587f75797174367b7775" class="contact-row">
             <div class="icon-circle pink-box">
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
             </div>
@@ -127,7 +126,7 @@
           </a>
         </div>
 
-        <div class="section-card">
+        <div class="section-card w3-card-4 w3-round-large w3-white">
           <a href="https://www.linkedin.com/in/valeryop" target="_blank" rel="noopener noreferrer" class="contact-row">
             <div class="icon-circle blue-box">
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect x="2" y="9" width="4" height="12"></rect><circle cx="4" cy="4" r="2"></circle></svg>
@@ -139,7 +138,7 @@
           </a>
         </div>
 
-        <div class="section-card">
+        <div class="section-card w3-card-4 w3-round-large w3-white">
           <a href="https://github.com/valerydariana98" target="_blank" rel="noopener noreferrer" class="contact-row">
             <div class="icon-circle purple-box">
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
@@ -150,6 +149,7 @@
             </div>
           </a>
         </div>
+
       </div>
     </section>
 
@@ -173,83 +173,83 @@
         </svg>
         Skills
       </h2>
-<div class="grid-one-column">
 
-  <div class="section-card">
-    <h3>Languages</h3> <br>
-    <div class="tags">
-      <span class="pink-box">Java</span>
-      <span class="pink-box">Python</span> 
-      <span class="pink-box">JavaScript</span>
-      <span class="pink-box">TypeScript</span>          
-    </div>
-  </div>
+      <div class="grid-one-column">
+        <div class="section-card w3-card-4 w3-round-large w3-white">
+          <h3>Languages</h3> <br>
+          <div class="tags">
+            <span class="pink-box">Java</span>
+            <span class="pink-box">Python</span>
+            <span class="pink-box">JavaScript</span>
+            <span class="pink-box">TypeScript</span>
+          </div>
+        </div>
 
-  <div class="section-card">
-    <h3>Frontend</h3> <br>
-    <div class="tags">
-      <span class="blue-box">HTML5</span>
-      <span class="blue-box">CSS3</span>
-      <span class="blue-box">Tailwind CSS</span>
-      <span class="blue-box">React</span>
-      <span class="blue-box">React Native</span>
-    </div>
-  </div>
+        <div class="section-card w3-card-4 w3-round-large w3-white">
+          <h3>Frontend</h3> <br>
+          <div class="tags">
+            <span class="blue-box">HTML5</span>
+            <span class="blue-box">CSS3</span>
+            <span class="blue-box">Tailwind CSS</span>
+            <span class="blue-box">React</span>
+            <span class="blue-box">React Native</span>
+          </div>
+        </div>
 
-  <div class="section-card">
-    <h3>Backend</h3>  <br>
-    <div class="tags">
-      <span class="green-box">Node.js (Express)</span>
-      <span class="green-box">PHP (Laravel)</span>
-    </div>
-  </div>
+        <div class="section-card w3-card-4 w3-round-large w3-white">
+          <h3>Backend</h3> <br>
+          <div class="tags">
+            <span class="green-box">Node.js (Express)</span>
+            <span class="green-box">PHP (Laravel)</span>
+          </div>
+        </div>
 
-  <div class="section-card">
-    <h3>Databases</h3>  <br>
-    <div class="tags">
-      <span class="purple-box">PostgreSQL</span>
-      <span class="purple-box">SQL Server</span>
-      <span class="purple-box">MongoDB</span>
-    </div>
-  </div>
+        <div class="section-card w3-card-4 w3-round-large w3-white">
+          <h3>Databases</h3> <br>
+          <div class="tags">
+            <span class="purple-box">PostgreSQL</span>
+            <span class="purple-box">SQL Server</span>
+            <span class="purple-box">MongoDB</span>
+          </div>
+        </div>
 
-  <div class="section-card">
-    <h3>Quality Assurance</h3>  <br>
-    <div class="tags">
-      <span class="pink-box">Test Plans</span>
-      <span class="pink-box">Test Case Design</span>
-      <span class="pink-box">Bug Reporting</span>
-      <span class="pink-box">Functional Testing</span>
-      <span class="pink-box">Regression Testing</span>
-      <span class="pink-box">Exploratory Testing</span>
-      <span class="pink-box">UI Testing</span>
-      <span class="pink-box">API Testing</span>
-    </div>
-  </div>
+        <div class="section-card w3-card-4 w3-round-large w3-white">
+          <h3>Quality Assurance</h3> <br>
+          <div class="tags">
+            <span class="pink-box">Test Plans</span>
+            <span class="pink-box">Test Case Design</span>
+            <span class="pink-box">Bug Reporting</span>
+            <span class="pink-box">Functional Testing</span>
+            <span class="pink-box">Regression Testing</span>
+            <span class="pink-box">Exploratory Testing</span>
+            <span class="pink-box">UI Testing</span>
+            <span class="pink-box">API Testing</span>
+          </div>
+        </div>
 
-  <div class="section-card">
-    <h3>Automation</h3> <br>
-    <div class="tags">
-      <span class="blue-box">Postman (API)</span>
-      <span class="blue-box">Cypress (E2E)</span>
-      <span class="blue-box">Selenium WebDriver (UI)</span>
-    </div>
-  </div>
+        <div class="section-card w3-card-4 w3-round-large w3-white">
+          <h3>Automation</h3> <br>
+          <div class="tags">
+            <span class="blue-box">Postman (API)</span>
+            <span class="blue-box">Cypress (E2E)</span>
+            <span class="blue-box">Selenium WebDriver (UI)</span>
+          </div>
+        </div>
 
-  <div class="section-card">
-    <h3>Development Tools</h3>  <br>
-    <div class="tags">
-      <span class="green-box">Git</span>
-      <span class="green-box">GitHub</span>
-      <span class="green-box">GitLab</span>
-      <span class="green-box">VS Code</span>
-      <span class="green-box">VirtualBox</span>
-      <span class="green-box">VMware</span>
-      <span class="green-box">Docker</span>
-    </div>
-  </div>
+        <div class="section-card w3-card-4 w3-round-large w3-white">
+          <h3>Development Tools</h3> <br>
+          <div class="tags">
+            <span class="green-box">Git</span>
+            <span class="green-box">GitHub</span>
+            <span class="green-box">GitLab</span>
+            <span class="green-box">VS Code</span>
+            <span class="green-box">VirtualBox</span>
+            <span class="green-box">VMware</span>
+            <span class="green-box">Docker</span>
+          </div>
+        </div>
 
-</div>
+      </div>
     </section>
 
     <!-- PROJECTS -->
@@ -264,9 +264,8 @@
       </h2>
 
       <div class="grid-two-columns">
-        <!-- CV Website -->
         <a href="https://github.com/valerydariana98/CV" target="_blank" rel="noopener noreferrer" class="project-link">
-          <div class="section-card project-card cv">
+          <div class="section-card project-card cv w3-card-4 w3-round-large w3-white">
             <div class="project-header">
               <div class="project-icon">
                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
@@ -287,9 +286,8 @@
           </div>
         </a>
 
-        <!-- Snapfilm -->
         <a href="https://github.com/valerydariana98/SnapFilm" target="_blank" rel="noopener noreferrer" class="project-link">
-          <div class="section-card project-card snapfilm">
+          <div class="section-card project-card snapfilm w3-card-4 w3-round-large w3-white">
             <div class="project-header">
               <div class="project-icon">
                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
@@ -311,9 +309,8 @@
           </div>
         </a>
 
-        <!-- JobNetwork -->
         <a href="https://github.com/valerydariana98/JobNetwork" target="_blank" rel="noopener noreferrer" class="project-link">
-          <div class="section-card project-card oficios">
+          <div class="section-card project-card oficios w3-card-4 w3-round-large w3-white">
             <div class="project-header">
               <div class="project-icon">
                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
@@ -333,27 +330,26 @@
           </div>
         </a>
 
-<!-- MafiaCards -->
-<a href="https://github.com/valerydariana98/MafiaCards" target="_blank" rel="noopener noreferrer" class="project-link">
-  <div class="section-card project-card mafia">
-    <div class="project-header">
-      <div class="project-icon">
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
-          <rect x="8.5" y="3" width="10" height="14" rx="2" fill="currentColor" stroke="white" stroke-width="1"/>
-          <rect x="5" y="7" width="10" height="14" rx="2" fill="currentColor" stroke="white" stroke-width="1"/>
-        </svg>
-      </div>
-    </div>
-    <h3>MafiaCards App</h3>
-    <p>
-      Mobile game where players receive predefined hidden roles
-      and use deduction and discussion to identify the mafia.
-    </p>
-    <div class="project-tags">
-      <span>React Native</span><span>JavaScript</span>
-    </div>
-  </div>
-</a>
+        <a href="https://github.com/valerydariana98/MafiaCards" target="_blank" rel="noopener noreferrer" class="project-link">
+          <div class="section-card project-card mafia w3-card-4 w3-round-large w3-white">
+            <div class="project-header">
+              <div class="project-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                  <rect x="8.5" y="3" width="10" height="14" rx="2" fill="currentColor" stroke="white" stroke-width="1"/>
+                  <rect x="5" y="7" width="10" height="14" rx="2" fill="currentColor" stroke="white" stroke-width="1"/>
+                </svg>
+              </div>
+            </div>
+            <h3>MafiaCards App</h3>
+            <p>
+              Mobile game where players receive predefined hidden roles
+              and use deduction and discussion to identify the mafia.
+            </p>
+            <div class="project-tags">
+              <span>React Native</span><span>JavaScript</span>
+            </div>
+          </div>
+        </a>
 
       </div>
     </section>
@@ -372,7 +368,8 @@
       </h2>
 
       <div class="grid-one-column">
-        <div class="section-card">
+
+        <div class="section-card w3-card-4 w3-round-large w3-white">
           <article>
             <h3>Computer Science Student</h3>
             <p>
@@ -382,7 +379,7 @@
           </article>
         </div>
 
-        <div class="section-card">
+        <div class="section-card w3-card-4 w3-round-large w3-white">
           <article>
             <h3>Diploma in Higher Education</h3>
             <p>
@@ -392,7 +389,7 @@
           </article>
         </div>
 
-        <div class="section-card">
+        <div class="section-card w3-card-4 w3-round-large w3-white">
           <article>
             <h3>Industrial Engineering</h3>
             <p>
@@ -401,6 +398,7 @@
             </p>
           </article>
         </div>
+
       </div>
     </section>
 
@@ -415,13 +413,13 @@
       </h2>
 
       <div class="grid-one-column">
-        <div class="section-card timeline-item"> 
+        <div class="section-card timeline-item w3-card-4 w3-round-large w3-white">
           <article>
             <h3>
               Postgraduate Teaching
               <span class="date">2025</span>
             </h3>
-            <p style="color: black;"> <strong> Escuela de Postgrado – UMSS </strong> </p>
+            <p style="color: black;"><strong>Escuela de Postgrado – UMSS</strong></p>
             <ul>
               <li>Diploma in Competency-Based Higher Education (21st Edition) <br> Module: Learning and Teaching Strategies (Apr–May 2025)</li>
               <li>Diploma in Competency-Based Virtual Teaching (6th Edition) <br> Module: Design and Management of Assessment for Virtual Environments (Jun–Jul 2025)</li>
@@ -429,13 +427,13 @@
           </article>
         </div>
 
-        <div class="section-card timeline-item"> 
+        <div class="section-card timeline-item w3-card-4 w3-round-large w3-white">
           <article>
             <h3>
               Digital Projects
               <span class="date">2018 – 2025</span>
             </h3>
-            <p style="color: black;"> <strong> Freelance </strong> </p>
+            <p style="color: black;"><strong>Freelance</strong></p>
             <ul>
               <li>Created and managed digital platforms focused on content creation, growth strategies, and monetization.</li>
               <li>YouTube: Managed and grew channels, including content planning, video production, editing, and monetization through ads.</li>
@@ -445,13 +443,13 @@
           </article>
         </div>
 
-        <div class="section-card timeline-item">
+        <div class="section-card timeline-item w3-card-4 w3-round-large w3-white">
           <article>
             <h3>
               Entrepreneur
               <span class="date">2024</span>
             </h3>
-            <p style="color: black;"> <strong> Boba Queen LLC </strong> </p>            
+            <p style="color: black;"><strong>Boba Queen LLC</strong></p>
             <ul>
               <li>Created brand identity and designed the physical store layout.</li>
               <li>Managed marketing campaigns and social media presence.</li>
@@ -461,13 +459,13 @@
           </article>
         </div>
 
-        <div class="section-card timeline-item"> 
+        <div class="section-card timeline-item w3-card-4 w3-round-large w3-white">
           <article>
             <h3>
               Administrative Assistant
               <span class="date">2022 – 2024</span>
             </h3>
-            <p style="color: black;"> <strong> Pocomas SRL </strong> </p>  
+            <p style="color: black;"><strong>Pocomas SRL</strong></p>
             <ul>
               <li>Managed and optimized product flow in warehouses.</li>
               <li>Improved delivery times through technological solutions.</li>
@@ -475,6 +473,7 @@
             </ul>
           </article>
         </div>
+
       </div>
     </section>
 
@@ -497,7 +496,7 @@
       </h2>
 
       <div class="grid-one-column">
-        <div class="section-card">
+        <div class="section-card w3-card-4 w3-round-large w3-white">
           <ul>
             <li>Honor Diploma in Merit for Academic Performance as Best Student, Faculty of Science and Technology, UMSS · 2021</li>
             <li>Honor Diploma in Merit for Academic Performance as Third Best Student, Faculty of Science and Technology, UMSS · 2020</li>
@@ -505,7 +504,7 @@
           </ul>
         </div>
 
-        <div class="section-card">
+        <div class="section-card w3-card-4 w3-round-large w3-white">
           <ul>
             <li>Recognition for High Performance in the Academic Training Course, Industrial Engineering Career, FCYT · 2022</li>
             <li>Recognition for Outstanding Academic Performance as Best Student, Faculty of Science and Technology, Departmental Legislative Assembly · 2021</li>
@@ -513,6 +512,7 @@
             <li>Recognition for Outstanding Performance as a Student of Industrial Engineering, FCYT · 2019</li>
           </ul>
         </div>
+
       </div>
     </section>
 
@@ -521,7 +521,6 @@
       <h2 class="section-title">
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
           <circle cx="12" cy="12" r="9"></circle>
-
           <path d="M3 12h18" stroke="white" stroke-width="1.5"/>
           <path d="M12 3a15 15 0 0 1 0 18" stroke="white" stroke-width="1.5"/>
           <path d="M12 3a15 15 0 0 0 0 18" stroke="white" stroke-width="1.5"/>
@@ -530,15 +529,16 @@
       </h2>
 
       <div class="grid-two-columns">
-        <div class="section-card">
+        <div class="section-card w3-card-4 w3-round-large w3-white">
           <h3>Spanish</h3>
           <p>Native</p>
         </div>
 
-        <div class="section-card">
+        <div class="section-card w3-card-4 w3-round-large w3-white">
           <h3>English</h3>
           <p>Intermediate</p>
         </div>
+
       </div>
     </section>
 
@@ -548,7 +548,6 @@
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
           <circle cx="9" cy="9" r="3"></circle>
           <path d="M3 20a6 6 0 0 1 12 0"></path>
-
           <circle cx="15" cy="8" r="3"></circle>
           <path d="M9 20a6 6 0 0 1 12 0"></path>
         </svg>
@@ -556,94 +555,72 @@
       </h2>
 
       <div class="grid-two-columns">
-        <div class="section-card">
+        <div class="section-card w3-card-4 w3-round-large w3-white">
           <article>
             <h3>Engineer Veimar Choque</h3>
-
-            <p>
-              Computer Engineer specialized in Full Stack Web Development.
-            </p>
-
+            <p>Computer Engineer specialized in Full Stack Web Development.</p>
             <div class="reference-actions">
               <a href="https://wa.me/59179725051" target="_blank" class="contact-pill green-box">
                 (+591) 79725051
               </a>
-              <a href="mailto:veimarchoque@gmail.com" class="contact-pill pink-box">
+              <a href="/cdn-cgi/l/email-protection#b3c5d6daded2c1d0dbdcc2c6d6f3d4ded2dadf9dd0dcde" class="contact-pill pink-box">
                 veimarchoque@gmail.com
               </a>
             </div>
           </article>
         </div>
 
-        <div class="section-card">
+        <div class="section-card w3-card-4 w3-round-large w3-white">
           <article>
             <h3>Master Walter Vildozo</h3>
-
-            <p>
-              University professor and business manager with leadership experience.
-            </p>
-
+            <p>University professor and business manager with leadership experience.</p>
             <div class="reference-actions">
               <a href="https://wa.me/59176402828" target="_blank" class="contact-pill green-box">
                 (+591) 76402828
               </a>
-              <a href="mailto:waltervildozo@gmail.com" class="contact-pill pink-box">
+              <a href="/cdn-cgi/l/email-protection#a4d3c5c8d0c1d6d2cdc8c0cbdecbe4c3c9c5cdc88ac7cbc9" class="contact-pill pink-box">
                 waltervildozo@gmail.com
               </a>
             </div>
           </article>
         </div>
+
       </div>
     </section>
+
   </main>
 
-  <footer class="footer">
-    <div class="footer-container">
-      <!-- WHATSAPP -->
-      <a href="https://wa.me/59160781562" target="_blank" rel="noopener noreferrer" class="footer-item green-box">
+  <footer class="footer w3-padding">
+    <div class="footer-container w3-center">
+      <a href="https://wa.me/59160781562" target="_blank" rel="noopener noreferrer" class="footer-item green-box w3-round-large">
         <div class="icon-circle">
           <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
             viewBox="0 0 24 24" fill="none" stroke="currentColor"
             stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-            <path d="M22 16.92v3a2 2 0 0 1-2.18 2
-              19.79 19.79 0 0 1-8.63-3.07
-              19.5 19.5 0 0 1-6-6
-              19.79 19.79 0 0 1-3.07-8.67
-              A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72
-              12.84 12.84 0 0 0 .7 2.81
-              2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6
-              l1.27-1.27a2 2 0 0 1 2.11-.45
-              12.84 12.84 0 0 0 2.81.7
-              A2 2 0 0 1 22 16.92z"></path>
+            <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
           </svg>
         </div>
         <span>WhatsApp</span>
       </a>
 
-      <!-- EMAIL -->
-      <a href="mailto:valerydariana98@gmail.com" class="footer-item pink-box">
+      <a href="mailto:valerydariana98@gmail.com" class="footer-item pink-box w3-round-large">
         <div class="icon-circle">
           <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
             viewBox="0 0 24 24" fill="none" stroke="currentColor"
             stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-            <path d="M4 4h16c1.1 0 2 .9 2 2v12
-              c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6
-              c0-1.1.9-2 2-2z"></path>
+            <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
             <polyline points="22,6 12,13 2,6"></polyline>
           </svg>
         </div>
         <span>Email</span>
       </a>
 
-      <!-- LINKEDIN -->
-      <a href="https://www.linkedin.com/in/valeryop" target="_blank" rel="noopener noreferrer" class="footer-item blue-box">
+      <a href="https://www.linkedin.com/in/valeryop" target="_blank" rel="noopener noreferrer" class="footer-item blue-box w3-round-large">
         <div class="icon-circle">
           <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
             viewBox="0 0 24 24" fill="none" stroke="currentColor"
             stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-            <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7
-              a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7
-              a6 6 0 0 1 6-6z"></path>
+            <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path>
             <rect x="2" y="9" width="4" height="12"></rect>
             <circle cx="4" cy="4" r="2"></circle>
           </svg>
@@ -651,23 +628,12 @@
         <span>LinkedIn</span>
       </a>
 
-      <!-- GITHUB -->
-      <a href="https://github.com/valerydariana98" target="_blank" rel="noopener noreferrer" class="footer-item purple-box">
+      <a href="https://github.com/valerydariana98" target="_blank" rel="noopener noreferrer" class="footer-item purple-box w3-round-large">
         <div class="icon-circle">
           <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
             viewBox="0 0 24 24" fill="none" stroke="currentColor"
             stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-            <path d="M9 19c-5 1.5-5-2.5-7-3
-              m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61
-              c3.14-.35 6.44-1.54 6.44-7
-              A5.44 5.44 0 0 0 20 4.77
-              A5.07 5.07 0 0 0 19.91 1
-              S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0
-              C6.27.65 5.09 1 5.09 1
-              A5.07 5.07 0 0 0 5 4.77
-              a5.44 5.44 0 0 0-1.5 3.78
-              c0 5.42 3.3 6.61 6.44 7
-              A3.37 3.37 0 0 0 9 18.13V22"></path>
+            <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path>
           </svg>
         </div>
         <span>GitHub</span>
