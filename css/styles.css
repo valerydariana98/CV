@@ -94,8 +94,8 @@ section {
 
 .section-card {
   background: var(--white);
-  border-radius: 12px;
-  box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+  border-radius: 7px;
+  box-shadow: 0 2px 10px rgb(172, 171, 171);
   padding: 1.5rem;      
   display: flex;
   flex-direction: column;
@@ -266,7 +266,7 @@ section {
 
 .tags span {
   padding: 0.6rem 1.2rem; 
-  border-radius: 12px;   
+  border-radius: 7px;   
   font-size: 1rem;      
   font-weight: 500;
   white-space: nowrap;
@@ -274,7 +274,7 @@ section {
 
 /* PROJECTS */
 .project-header {
-  border-radius: 12px;
+  border-radius: 7px;
   padding: 2.5rem;
   display: flex;
   align-items: center;
@@ -332,7 +332,7 @@ section {
   background: var(--light-gray);
   color: var(--dark-gray);
   padding: 0.3rem 0.7rem;
-  border-radius: 6px;
+  border-radius: 7px;
   font-size: 0.8rem;
   font-weight: 500;
 }
@@ -343,36 +343,17 @@ section {
   padding-left: 2rem; 
 }
 
-/* Linea */
-.timeline-item::after {
-  content: "";
-  position: absolute;
-  left: 9px;
-  top: 3rem;  
-  bottom: 1rem;  
-  width: 2px;
-  background: #e5e7eb;
-}
-
-/* Punto  */
-.timeline-item::before {
-  content: "";
-  position: absolute;
-  left: 6px; 
-  top: 1.8rem; 
-  width: 10px;
-  height: 10px;
-  background: var(--dark-pink); 
-  border-radius: 50%;
-  z-index: 1; 
-}
-
 .timeline-item h3 {
   display: flex;
   justify-content: space-between; 
   align-items: center;
   margin-bottom: 0.3rem;
   color: var(--dark-pink); 
+}
+
+.timeline-item ul{
+  position: relative;
+  padding-left: 1rem; 
 }
 
 .date {
@@ -425,10 +406,10 @@ section {
   text-decoration: none;
 
   padding: 1rem;
-  border-radius: 16px;
+  border-radius: 10px;
 
-  width: 75px; 
-  height: 75px;
+  width: 70px; 
+  height: 70px;
   transition: all 0.3s ease;
 }
 
@@ -438,8 +419,8 @@ section {
 }
 
 .footer-item .icon-circle {
-  width: 48px;
-  height: 48px;
+  width: 35px;
+  height: 35px;
   border-radius: 14px;
 
   display: flex;
